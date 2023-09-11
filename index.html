@@ -1,432 +1,736 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Portfolio Website</title>
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-<body>
-	<section class="banner">
-		<div class="container">
-			<div class="header-top">
-				<div class="logo">
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio Website</title>
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="css/font-awesome.min.css"
+        />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+    <body>
+        <section class="banner">
+            <div class="container">
+                <nav class="col">
+                    <div class="col-3">
+                        <img src="img/cuda.png" />
+                    </div>
+                    <div class="col-9">
+                        <input type="checkbox" id="drop-down-cbox" />
+                        <label for="drop-down-cbox">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </label>
 
-					<img src="img/cuda.png">
-					
-				</div>
+                        <ul class="main-nav small-caps">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Work</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li>
+                                <span>List of Work</span>
+                                <ul>
+                                    <li><a href="#">Codepen</a></li>
+                                    <li><a href="">Behance</a></li>
+                                    <li><a href="#">Github</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="col">
+                    <div class="col-12">
+                        <div class="hero">
+                            <h2>
+                                Lorem Ipsum is simply dummy text of the printing
+                                and typesetting industry. Lorem Ipsum has been
+                                the industry's standard dummy
+                            </h2>
 
-				<div class="menu-bar">
-					<nav>
-						<ul>
-							<li><a href="#">Home</a></li>
-							<li><a href="#">About</a></li>
-							<li><a href="#">Work</a></li>
-							<li><a href="#">Blog</a></li>
-							<li><a href="#">Contact</a></li>
-						</ul>
-						
-					</nav>
-					
-				</div>
-				
-			</div>
+                            <button type="button" class="btn-primary">
+                                Work With Us
+                            </button>
+                        </div>
+                        <!-- .hero end -->
+                    </div>
+                    <!-- .col-12 end -->
+                </div>
+                <!-- .col end -->
+            </div>
+            <!-- .container end -->
+        </section>
+        <!-- .banner end -->
 
-			<div class="hero">
+        <section class="service">
+            <div class="container">
+                <div class="col cuda-details">
+                    <div class="col-7">
+                        <h2>Service We Provide</h2>
+                        <span class="under-line"></span>
+                        <p>
+                            It is a long established fact that a reader will be
+                            distracted by the readable content of a page when
+                            looking at its layout. The point of using Lorem
+                            Ipsum is that it has a mor
+                        </p>
+                    </div>
+                </div>
 
-				<h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy </h2>
+                <div class="col">
+                    <div class="col-3">
+                        <div class="service-card">
+                            <div class="service-card-header">
+                                <h3>Branding</h3>
+                                <div class="service-card-icon">
+                                    <img src="img/branding.png" />
+                                </div>
+                            </div>
 
-				<button type="button" class="btn">Work With Us</button>
-				
-			</div>
-			
-		</div>
-		
-	</section>
+                            <p>
+                                There are many variations of passages of Lorem
+                                Ipsum available, but the majority have suffered
+                                alteration in some form, by injected humour
+                            </p>
+                        </div>
+                    </div>
 
-	<section class="service">
-		<div class="container">
-			<div class="heading-tittle">
-				<h2>Service We Provide</h2>
-				<span class="under-line"></span>
-				<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a mor</p>
-				
-			</div>
+                    <div class="col-3">
+                        <div class="service-card">
+                            <div class="service-card-header">
+                                <h3>Branding</h3>
+                                <div class="service-card-icon icon-2">
+                                    <img src="img/design.png" />
+                                </div>
+                            </div>
 
-			<div class="service-box">
-				<div class="service-one">
-					<img src="img/branding.png">
-					<h3>Branding</h3>
-					<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
-					
-				</div>
+                            <p>
+                                There are many variations of passages of Lorem
+                                Ipsum available, but the majority have suffered
+                                alteration in some form, by injected humour
+                            </p>
+                        </div>
+                    </div>
 
-				<div class="service-one">
-					<img src="img/design.png">
-					<h3>Branding</h3>
-					<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
-				
-				</div>
+                    <div class="col-3">
+                        <div class="service-card">
+                            <div class="service-card-header">
+                                <h3>Branding</h3>
+                                <div class="service-card-icon">
+                                    <img src="img/devlopment.png" />
+                                </div>
+                            </div>
 
-				<div class="service-one">
-					<img src="img/devlopment.png">
-					<h3>Branding</h3>
-					<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
-					
-				</div>
+                            <p>
+                                There are many variations of passages of Lorem
+                                Ipsum available, but the majority have suffered
+                                alteration in some form, by injected humour
+                            </p>
+                        </div>
+                    </div>
 
-				<div class="service-one">
-					<img src="img/rocket.png">
-					<h3>Branding</h3>
-					<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
-					
-				</div>
-				
-			</div>
-			
-		</div>
-		
-	</section>
-	
-	</section>
+                    <div class="col-3">
+                        <div class="service-card">
+                            <div class="service-card-header">
+                                <h3>Branding</h3>
+                                <div class="service-card-icon">
+                                    <img src="img/rocket.png" />
+                                </div>
+                            </div>
 
-	<section class="feature">
-		<div class="container">
-			<div class="heading-tittle">
-				<h2>Meet our Beautiful Team</h2>
-				<span class="under-line"></span>
-				<p>We are work with both individuals and bussinesss from all over the globe to creat awesome websites and applications</p>
-				
-			</div>
+                            <p>
+                                There are many variations of passages of Lorem
+                                Ipsum available, but the majority have suffered
+                                alteration in some form, by injected humour
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-			<div class="feature-box">
-				<div class="feature-one">
-					<img src="img/team-one.png">
-					<h3>anna hathaway</h3>
-					<h4>CEO/Marketing Guru</h4>
-					<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
-					
-					<ul>
-						<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></i></a></li>
-						<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a></li>
-						<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></i></a></li>
-						
-						<li><a class="sign-in" href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+        <section class="feature">
+            <div class="container">
+                <div class="col cuda-details">
+                    <div class="col-7">
+                        <h2>Meet our Beautiful Team</h2>
+                        <span class="under-line"></span>
+                        <p>
+                            We are work with both individuals and bussinesss
+                            from all over the globe to creat awesome websites
+                            and applications
+                        </p>
+                    </div>
+                </div>
 
-					
-					</ul>
-				
-					
-				</div>
+                <div class="col">
+                    <div class="col-3 feature-card">
+                        <img src="img/team-one.png" />
+                        <h3>anna hathaway</h3>
+                        <h4>CEO/Marketing Guru</h4>
+                        <p>
+                            There are many variations of passages of Lorem Ipsum
+                            available, but the majority have suffered alteration
+                            in some form, by injected humour
+                        </p>
 
-				<div class="feature-one">
-					<img src="img/team-two.png">
-					<h3>anna hathaway</h3>
-					<h4>CEO/Marketing Guru</h4>
-					<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
-					
-					<ul>
-						<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></i></a></li>
-						<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a></li>
-						<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></i></a></li>
-						
-						<li><a class="sign-in" href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+                        <ul>
+                            <li>
+                                <a href="#"
+                                    ><i
+                                        class="fa fa-facebook"
+                                        aria-hidden="true"
+                                    ></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><i
+                                        class="fa fa-twitter"
+                                        aria-hidden="true"
+                                    ></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><i
+                                        class="fa fa-linkedin"
+                                        aria-hidden="true"
+                                    ></i
+                                ></a>
+                            </li>
 
-					
-					</ul>
-				
-				
-				</div>
+                            <li>
+                                <a class="sign-in" href="#"
+                                    ><i
+                                        class="fa fa-envelope-o"
+                                        aria-hidden="true"
+                                    ></i
+                                ></a>
+                            </li>
+                        </ul>
+                    </div>
 
-				<div class="feature-one">
-					<img src="img/team-three.png">
-					<h3>anna hathaway</h3>
-					<h4>CEO/Marketing Guru</h4>
-					<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
-					
-					
-					<ul>
-						<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></i></a></li>
-						<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a></li>
-						<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></i></a></li>
-						
-						<li><a class="sign-in" href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+                    <div class="col-3 feature-card">
+                        <img src="img/team-two.png" />
+                        <h3>anna hathaway</h3>
+                        <h4>CEO/Marketing Guru</h4>
+                        <p>
+                            There are many variations of passages of Lorem Ipsum
+                            available, but the majority have suffered alteration
+                            in some form, by injected humour
+                        </p>
 
-					
-					</ul>
-				
-					
-				</div>
+                        <ul>
+                            <li>
+                                <a href="#"
+                                    ><i
+                                        class="fa fa-facebook"
+                                        aria-hidden="true"
+                                    ></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><i
+                                        class="fa fa-twitter"
+                                        aria-hidden="true"
+                                    ></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><i
+                                        class="fa fa-linkedin"
+                                        aria-hidden="true"
+                                    ></i
+                                ></a>
+                            </li>
 
-				<div class="feature-one">
-					<img src="img/team-four.png">
-					<h3>anna hathaway</h3>
-					<h4>CEO/Marketing Guru</h4>
-					<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
-					
-					
-					<ul>
-						<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></i></a></li>
-						<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a></li>
-						<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></i></a></li>
-						<li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+                            <li>
+                                <a class="sign-in" href="#"
+                                    ><i
+                                        class="fa fa-envelope-o"
+                                        aria-hidden="true"
+                                    ></i
+                                ></a>
+                            </li>
+                        </ul>
+                    </div>
 
-					
-					</ul>
-				
-					
-				</div>
-				
-				
-				
-			</div>
-			
-		</div>
-		
-	</section>
+                    <div class="col-3 feature-card">
+                        <img src="img/team-three.png" />
+                        <h3>anna hathaway</h3>
+                        <h4>CEO/Marketing Guru</h4>
+                        <p>
+                            There are many variations of passages of Lorem Ipsum
+                            available, but the majority have suffered alteration
+                            in some form, by injected humour
+                        </p>
 
+                        <ul>
+                            <li>
+                                <a href="#"
+                                    ><i
+                                        class="fa fa-facebook"
+                                        aria-hidden="true"
+                                    ></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><i
+                                        class="fa fa-twitter"
+                                        aria-hidden="true"
+                                    ></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><i
+                                        class="fa fa-linkedin"
+                                        aria-hidden="true"
+                                    ></i
+                                ></a>
+                            </li>
 
+                            <li>
+                                <a class="sign-in" href="#"
+                                    ><i
+                                        class="fa fa-envelope-o"
+                                        aria-hidden="true"
+                                    ></i
+                                ></a>
+                            </li>
+                        </ul>
+                    </div>
 
+                    <div class="col-3 feature-card">
+                        <img src="img/team-four.png" />
+                        <h3>anna hathaway</h3>
+                        <h4>CEO/Marketing Guru</h4>
+                        <p>
+                            There are many variations of passages of Lorem Ipsum
+                            available, but the majority have suffered alteration
+                            in some form, by injected humour
+                        </p>
 
-<section class="skill">
-		<div class="container">
-			<div class="heading-tittle">
-				<h2>We Got Skills!</h2>
-				<span class="under-line"></span>
-				<p>We are work with both individuals and bussinesss from all over the globe to creat awesome websites and applications</p>
-				
-			</div>
+                        <ul>
+                            <li>
+                                <a href="#"
+                                    ><i
+                                        class="fa fa-facebook"
+                                        aria-hidden="true"
+                                    ></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><i
+                                        class="fa fa-twitter"
+                                        aria-hidden="true"
+                                    ></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><i
+                                        class="fa fa-linkedin"
+                                        aria-hidden="true"
+                                    ></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><i
+                                        class="fa fa-envelope-o"
+                                        aria-hidden="true"
+                                    ></i
+                                ></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-			<div class="skill-box">
-				<div class="skill-one">
-					<img src="img/web_blue_circle.png">
-					<h3>Web Design</h3>
-					
-				</div>
+        <section class="skills">
+            <div class="container">
+                <div class="col cuda-details">
+                    <div class="col-7">
+                        <h2>We Got Skills!</h2>
+                        <span class="under-line"></span>
+                        <p>
+                            We are work with both individuals and bussinesss
+                            from all over the globe to creat awesome websites
+                            and applications
+                        </p>
+                    </div>
+                </div>
 
-				<div class="skill-one">
-					<img src="img/html_pink.png">
-					<h3>html/css</h3>
-					
-					
-				</div>
+                <div class="col">
+                    <div class="col-3 skill-card">
+                        <div
+                            role="progressbar"
+                            aria-valuenow="90"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                            style="--value: 90"
+                            class="skills-progressbar"
+                        ></div>
+                        <h3>Web Design</h3>
+                    </div>
+                    <div class="col-3 skill-card">
+                        <div
+                            role="progressbar2"
+                            aria-valuenow="85"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                            style="--value: 80"
+                            class="skills-progressbar"
+                        ></div>
+                        <h3>HTML/CSS</h3>
+                    </div>
+                    <div class="col-3 skill-card">
+                        <div
+                            role="progressbar3"
+                            aria-valuenow="75"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                            style="--value: 75"
+                            class="skills-progressbar"
+                        ></div>
+                        <h3>Branding</h3>
+                    </div>
+                    <div class="col-3 skill-card">
+                        <div
+                            role="progressbar4"
+                            aria-valuenow="70"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                            style="--value: 70"
+                            class="skills-progressbar"
+                        ></div>
+                        <h3>UI/UX</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-				<div class="skill-one">
-					<img src="img/graphics_green.png">
-					<h3>Branding</h3>
-					
-					
-				</div>
+        <!------------portfolio------->
 
-				<div class="skill-one">
-					<img src="img/ui_orange.png">
-					<h3>ui/ux</h3>
-					
-				</div>
-				
-				
-				
-			</div>
-			
-		</div>
-		
-	</section>
+        <section class="portfolio">
+            <div class="container">
+                <div class="col cuda-details">
+                    <div class="col-7">
+                        <h2>our portfolio!</h2>
+                        <span class="under-line"></span>
+                        <p class="space">
+                            We are work with both individuals and bussinesss
+                            from all over the globe to creat awesome websites
+                            and applications
+                        </p>
+                    </div>
+                    <div class="col-7">
+                        <a class="tab" href="#" target="_blank">all</a>
+                        <a class="tab" href="#" target="_blank">web</a>
+                        <a class="tab" href="#" target="_blank">psd to html</a>
+                        <a class="tab" href="#" target="_blank">wp</a>
+                    </div>
+                </div>
 
+                <div class="col gallery">
+                    <div class="col-4 gallery-card">
+                        <img src="img/portfolio_one.png" />
+                        <h3>isometric perspective mock-up</h3>
+                    </div>
 
+                    <div class="col-4 gallery-card">
+                        <img src="img/portfolio_two.png" />
+                        <h3>isometric perspective mock-up</h3>
+                    </div>
+                    <div class="col-4 gallery-card">
+                        <img src="img/portfolio_three.png" />
+                        <h3>isometric perspective mock-up</h3>
+                    </div>
 
-<!------------portfolio------->
+                    <div class="col-4 gallery-card">
+                        <img src="img/portfolio_four.png" />
+                        <h3>isometric perspective mock-up</h3>
+                    </div>
+                    <div class="col-4 gallery-card">
+                        <img src="img/portfolio_three.png" />
+                        <h3>isometric perspective mock-up</h3>
+                    </div>
 
-<section class="portfolio">
-		<div class="container">
-			<div class="heading-tittle-port">
-				<h2>our portfolio!</h2>
-				<span class="under-line"></span>
-				<p class="space">We are work with both individuals and bussinesss from all over the globe to creat awesome websites and applications</p>
-				<p>
-				<a class="port-btn" href="#" target="_blank" >all</a>
-				<a class="port-btn" href="#" target="_blank" >web</a>
-				<a class="port-btn" href="#" target="_blank" >psd to html</a>
-				<a class="port-btn" href="#" target="_blank" >wp</a>
-				
-				</p>
-				
-				
-				
-			</div>
-	
-			<div class="portfolio-box">
-				
-				<div class="portfolio-one">
-					<img src="img/portfolio_one.png">
-					<h3>isometric perspective mock-up</h3>
-					
-				</div>
+                    <div class="col-4 gallery-card">
+                        <img src="img/portfolio_four.png" />
+                        <h3>isometric perspective mock-up</h3>
+                    </div>
+                </div>
 
-				<div class="portfolio-one">
-					<img src="img/portfolio_two.png">
-					<h3>isometric perspective mock-up</h3>
-					
-					
-				</div>
+                <div class="gallery-btn">
+                    <button type="button" class="btn-primary btn-custom">
+                        Work With Us
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- review -->
+        <section class="review">
+            <div class="container">
+                <div class="col cuda-details">
+                    <div class="col-7">
+                        <h2>what people say about us!</h2>
+                        <span class="under-line"></span>
+                        <p class="space">Our clints love us!</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="col-4">
+                        <div class="col review-card">
+                            <div class="col-3">
+                                <img src="img/test-one.png" />
+                            </div>
 
-			</div>
-			
-			
-			<div class="portfolio-box">
-			
-				<div class="portfolio-one">
-					<img src="img/portfolio_three.png">
-					<h3>isometric perspective mock-up</h3>
-					
-					
-				</div>
+                            <div class="col-9 review-two">
+                                <p>
+                                    Nulam dapibus blandit orci, vivera gravida
+                                    duiloborits eget. Maecenas fringilla urna eu
+                                    nislscelerisque
+                                </p>
+                                <h3>chanel iman</h3>
+                                <h4>CEO of Pinterest</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="col review-card">
+                            <div class="col-3">
+                                <img src="img/test-one.png" />
+                            </div>
 
-				<div class="portfolio-one">
-					<img src="img/portfolio_four.png">
-					<h3>isometric perspective mock-up</h3>
-					
-				</div>
-				
-				<div class="portfolio">
-					<button type="button" class="btn-two">Work With Us</button>
-					
-				</div>
-				
-				
-			</div>
-			
-		</div>
-		
-	</section>
+                            <div class="col-9 review-two">
+                                <p>
+                                    Nulam dapibus blandit orci, vivera gravida
+                                    duiloborits eget. Maecenas fringilla urna eu
+                                    nislscelerisque
+                                </p>
+                                <h3>chanel iman</h3>
+                                <h4>CEO of Pinterest</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="col review-card">
+                            <div class="col-3">
+                                <img src="img/test-one.png" />
+                            </div>
 
+                            <div class="col-9 review-two">
+                                <p>
+                                    Nulam dapibus blandit orci, vivera gravida
+                                    duiloborits eget. Maecenas fringilla urna eu
+                                    nislscelerisque
+                                </p>
+                                <h3>chanel iman</h3>
+                                <h4>CEO of Pinterest</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section class="contacts">
+            <div class="container">
+                <div class="col cuda-details">
+                    <div class="col-7">
+                        <h2>get in touch</h2>
+                        <span class="under-line"></span>
+                        <p class="space">
+                            1600 pennsylvania ave NW, Washington, DC 20500,
+                            United States of America.<br />Tel: (202)456-1111
+                        </p>
+                    </div>
+                </div>
 
-<section class="review">
-		<div class="container">
-			<div class="heading-tittle-two">
-				<h2>what people say about us!</h2>
-				<span class="under-line"></span>
-				<p class="space">Our clints love us!</p>
+                <div class="contact-wrapper col">
+                    <!-- Left contact page -->
 
-			</div>
-	
-			<div class="review-box">
-				
-				<div class="review-one">
-					<img src="img/test-one.png">
-		
-				</div>
-				
-				<div class="review-two">
-					<p><i>"Nulam dapibus blandit orci, vivera gravida dui loborits eget. Maecenas fringilla urna eu nisl scelerisque</i></p>
-					<h3>chanel iman</h3>
-					<h4>CEO of Pinterest</h4>
-				
-				</div>
+                    <form
+                        id="contact-form"
+                        class="form-horizontal col-6"
+                        role="form"
+                    >
+                        <div class="form-group col">
+                            <div class="col-12">
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="name"
+                                    placeholder="NAME"
+                                    name="name"
+                                    value=""
+                                    required
+                                />
+                            </div>
+                        </div>
 
-				<div class="review-one">
-					<img src="img/test-one.png">
-					
-					
-				</div>
-				
-				<div class="review-two">
-					<p><i>"Nulam dapibus blandit orci, vivera gravida dui loborits eget. Maecenas fringilla urna eu nisl scelerisque</i></p>
-					<h3>chanel iman</h3>
-					<h4>CEO of Pinterest</h4>
-				
-				</div>
+                        <div class="form-group">
+                            <div class="col-6">
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="email"
+                                    placeholder="EMAIL"
+                                    name="email"
+                                    value=""
+                                    required
+                                />
+                            </div>
+                        </div>
 
-			</div>
-			
-			
-			<div class="review-box">
-			
-				<div class="review-one">
-					<img src="img/test-one.png">
-					
-					
-				</div>
-				
-				<div class="review-two">
-					<p><i>"Nulam dapibus blandit orci, vivera gravida dui loborits eget. Maecenas fringilla urna eu nisl scelerisque</i></p>
-					<h3>chanel iman</h3>
-					<h4>CEO of Pinterest</h4>
-				
-				</div>
+                        <textarea
+                            class="form-control"
+                            rows="10"
+                            placeholder="MESSAGE"
+                            name="message"
+                            required
+                        ></textarea>
 
-				<div class="review-one">
-					<img src="img/test-one.png">
-					
-				</div>
-				
-				<div class="review-two">
-					<p><i>"Nulam dapibus blandit orci, vivera gravida dui loborits eget. Maecenas fringilla urna eu nisl scelerisque</i></p>
-					<h3>chanel iman</h3>
-					<h4>CEO of Pinterest</h4>
-				
-				</div>
-				
-				
-				
-			</div>
-			
-		</div>
-		
-	</section>
+                        <div class="col contact-btn">
+                            <div>
+                                <button
+                                    class="btn-primary send-button"
+                                    id="submit"
+                                    type="submit"
+                                    value="SEND"
+                                >
+                                    <div class="alt-send-button">
+                                        <i class="fa fa-paper-plane"></i
+                                        ><span class="send-text">SEND</span>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
 
-<section class="contacts">
+                    <!-- Left contact page -->
 
-	<div class="container">
-	
-		<div class="heading-tittle-two">
-				<h2>get in touch</h2>
-				<span class="under-line"></span>
-				<p class="space">1600 pennsylvania ave NW, Washington, DC 20500, United States of America.<br>Tel: (202)456-1111</p>
+                    <div class="direct-contact-container col-6">
+                        <ul class="contact-list">
+                            <li class="list-item">
+                                <i class="fa fa-map-marker fa-2x"
+                                    ><span class="contact-text place"
+                                        >City, State</span
+                                    ></i
+                                >
+                            </li>
 
-			</div>
-		<div class="contacts-box">
-				<form>
-					<input type="text" name="" placeholder="your name" class="input-field">
-				<input type="email" name="" placeholder="your email" class="input-field">
-					
-					<textarea type="text" name="" placeholder="your text" class="your-text" ></textarea>
-					
-					<input type="submit" value="send message" class="btn-custom" >
-				</form>
-				
-			
-			</div>
-			
-		
-		</div>
-	
-		
+                            <li class="list-item">
+                                <i class="fa fa-phone fa-2x"
+                                    ><span class="contact-text phone"
+                                        ><a
+                                            href="tel:1-212-555-5555"
+                                            title="Give me a call"
+                                            >(212) 555-2368</a
+                                        ></span
+                                    ></i
+                                >
+                            </li>
 
+                            <li class="list-item">
+                                <i class="fa fa-envelope fa-2x"
+                                    ><span class="contact-text gmail"
+                                        ><a
+                                            href="mailto:#"
+                                            title="Send me an email"
+                                            >hitmeup@gmail.com</a
+                                        ></span
+                                    ></i
+                                >
+                            </li>
+                        </ul>
 
-</section>
+                        <hr />
+                        <ul class="social-media-list">
+                            <li>
+                                <a
+                                    href="#"
+                                    target="_blank"
+                                    class="contact-icon"
+                                >
+                                    <i
+                                        class="fa fa-github"
+                                        aria-hidden="true"
+                                    ></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    target="_blank"
+                                    class="contact-icon"
+                                >
+                                    <i
+                                        class="fa fa-codepen"
+                                        aria-hidden="true"
+                                    ></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    target="_blank"
+                                    class="contact-icon"
+                                >
+                                    <i
+                                        class="fa fa-twitter contact"
+                                        aria-hidden="true"
+                                    ></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    target="_blank"
+                                    class="contact-icon"
+                                >
+                                    <i
+                                        class="fa fa-instagram"
+                                        aria-hidden="true"
+                                    ></i
+                                ></a>
+                            </li>
+                        </ul>
+                        <hr />
 
+                        <div class="copyright">
+                            &copy; ALL OF THE RIGHTS RESERVED
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<section class="footer"r>
-	<div class="container" >
-		<div class="foot">
-			<ul>
-		
-			<li>facebook</li>
-			<li>twiter</li>
-			<li>linkedin</li>
-			<li>behance</li>
-			<li>github</li>
-			<li>dribble</li>
-		</ul>
-	
-	
-		</div>
-		
-	</div>
-
-
-</section>
-
-
-</body>
+        <section class="footer">
+            <div class="container">
+                <div class="foot">
+                    <ul>
+                        <li>facebook</li>
+                        <li>twiter</li>
+                        <li>linkedin</li>
+                        <li>behance</li>
+                        <li>github</li>
+                        <li>dribble</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </body>
 </html>
