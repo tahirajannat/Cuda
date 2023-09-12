@@ -14,11 +14,11 @@
     <body>
         <section class="banner">
             <div class="container">
-                <nav class="col">
-                    <div class="col-3">
+                <nav class="">
+                    <div class="site-logo">
                         <img src="img/cuda.png" />
                     </div>
-                    <div class="col-9">
+                    <div class="">
                         <input type="checkbox" id="drop-down-cbox" />
                         <label for="drop-down-cbox">
                             <span></span>
@@ -32,14 +32,14 @@
                             <li><a href="#work">Work</a></li>
                             <li><a href="#blog">Blog</a></li>
                             <li><a href="#contact">Contact</a></li>
-                            <li>
+                            <!-- <li>
                                 <span>List of Work</span>
                                 <ul>
                                     <li><a href="#">Codepen</a></li>
                                     <li><a href="">Behance</a></li>
                                     <li><a href="#">Github</a></li>
                                 </ul>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                 </nav>
@@ -580,36 +580,33 @@
 
                     <form
                         id="contact-form"
-                        class="form-horizontal col-8"
+                        class="form-horizontal col-7"
                         role="form"
                     >
                         <div id=" form-error" class="form-row"></div>
                         <div class="form-group col">
-                            <div class="col-12">
-                                <input
-                                    type="text"
-                                    class="form-control"
-                                    id="name"
-                                    placeholder="NAME"
-                                    name="name"
-                                    value=""
-                                    required
-                                />
-                            </div>
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="name"
+                                placeholder="NAME"
+                                name="name"
+                                value=""
+                                required
+                            />
+                            <input
+                                type="email"
+                                class="form-control"
+                                id="email"
+                                placeholder="EMAIL"
+                                name="email"
+                                value=""
+                                required
+                            />
                         </div>
 
                         <div class="form-group">
-                            <div class="col-6">
-                                <input
-                                    type="email"
-                                    class="form-control"
-                                    id="email"
-                                    placeholder="EMAIL"
-                                    name="email"
-                                    value=""
-                                    required
-                                />
-                            </div>
+                            <div class="col-6"></div>
                         </div>
 
                         <textarea
@@ -620,26 +617,22 @@
                             required
                         ></textarea>
 
-                        <div class="col contact-btn">
-                            <div>
-                                <button
-                                    class="btn-primary btn-custom"
-                                    id="submit"
-                                    type="submit"
-                                    value="SEND"
-                                >
-                                    <div class="alt-btn-primary">
-                                        <span class="btn-text">SEND</span>
-                                        <i class="fa fa-paper-plane"></i>
-                                    </div>
-                                </button>
+                        <button
+                            class="btn-primary btn-custom"
+                            id="submit"
+                            type="submit"
+                            value="SEND"
+                        >
+                            <div class="alt-btn-primary">
+                                <span class="btn-text">SEND</span>
+                                <i class="fa fa-paper-plane"></i>
                             </div>
-                        </div>
+                        </button>
                     </form>
 
                     <!-- Left contact page -->
 
-                    <div class="direct-contact-container col-4">
+                    <!-- <div class="direct-contact-container col-4">
                         <ul class="contact-list">
                             <li class="list-item">
                                 <i class="fa fa-map-marker fa-2x"
@@ -726,7 +719,7 @@
                                 </li>
                             </ul>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>

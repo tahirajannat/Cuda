@@ -24,8 +24,19 @@ body {
 .container {
     max-width: 1280px;
     margin: 0 auto;
+    padding: 0 40px;
 }
 
+@media (max-width: 768px) {
+    .container {
+        padding: 0 40px;
+    }
+}
+@media (max-width: 500px) {
+    .container {
+        padding: 0 20px;
+    }
+}
 .col {
     display: flex;
     flex-wrap: wrap;
@@ -70,6 +81,30 @@ body {
     flex-basis: 100%;
 }
 @media (max-width: 768px) {
+    .col-1,
+    .col-2,
+    .col-3 {
+        flex: 50%;
+    }
+    .col-4,
+    .col-5,
+    .col-6,
+    .col-8,
+    .col-9,
+    .col-10,
+    .col-10,
+    .col-11,
+    .col-12 {
+        /* flex: 50%; */
+    }
+    .col-7 {
+        flex: 100%;
+    }
+}
+@media (max-width: 500px) {
+    .col {
+        display: block;
+    }
     .col-1,
     .col-2,
     .col-3,
@@ -200,7 +235,7 @@ h2 {
     transform: translate3d(0px, -34px, 0px);
 }
 .btn-custom {
-    margin-top: 20px;
+    margin-top: 40px;
     width: 200px;
     background: #15af85;
     box-shadow: 0px 5px #109572;
@@ -209,6 +244,11 @@ h2 {
 .btn-custom:hover {
     background: #0ae8ca;
     box-shadow: 0px 5px #1dc599;
+}
+@media (max-width: 410px) {
+    .btn-primary {
+        width: 99%;
+    }
 }
 /* section main  */
 .under-line {
@@ -233,24 +273,40 @@ h2 {
     color: #131313;
     line-height: 35px;
 }
+@media (max-width: 768px) {
+    .cuda-details {
+        margin-bottom: 0;
+    }
+    .cuda-details h2 {
+        font-size: 22px;
+    }
+}
+@media (max-width: 500px) {
+    .cuda-details {
+        margin-bottom: 0;
+    }
+    .cuda-details h2 {
+        font-size: 18px;
+    }
+}
 /* common styles  */
 
 /* menu start  */
-.site-logo {
+/* .site-logo {
     font-size: 2rem;
     font-weight: bolder;
     text-transform: uppercase;
     letter-spacing: 0.8rem;
     margin: 0 1rem;
-}
-.nav-bar {
+} */
+nav {
     display: flex;
     justify-content: space-between;
 
     background-color: #87509c;
 }
 
-.nav-bar {
+nav {
     display: flex;
     align-items: center; /* vertically center */
     height: 100%;
@@ -265,8 +321,8 @@ h2 {
 #drop-down-cbox + label {
     position: relative;
     display: none;
-    width: 60px;
-    height: 60px;
+    width: 34px;
+    height: 34px;
     overflow: hidden;
     background-color: transparent;
     transition: all 10ms ease-in-out;
@@ -276,9 +332,9 @@ h2 {
 #drop-down-cbox + label span {
     position: absolute;
     display: block;
-    background-color: #666;
-    width: 34px;
-    height: 4px;
+    background-color: #fff;
+    width: 24px;
+    height: 3px;
     border-radius: 2px;
     left: 50%;
     top: 0;
@@ -288,22 +344,22 @@ h2 {
 
 /* Mobile Nav Button Bars Invididually */
 #drop-down-cbox + label span:nth-child(1) {
-    top: 35%; /* evenly spaced */
+    top: 30%; /* evenly spaced */
 }
 #drop-down-cbox + label span:nth-child(2) {
     top: 50%; /* evenly spaced */
 }
 #drop-down-cbox + label span:nth-child(3) {
-    top: 65%; /* evenly spaced */
+    top: 70%; /* evenly spaced */
 }
 
 /* Mobile Nav Button Styling for Checked */
 #drop-down-cbox:checked + label {
-    background-color: #666;
+    background-color: #fff;
 }
 
 #drop-down-cbox:checked + label span {
-    background-color: white;
+    background-color: #87509c;
 }
 
 /* Transform the bars into an 'X' */
@@ -373,15 +429,6 @@ h2 {
 
 /* Tablet and Mobile View */
 @media (max-width: 768px) {
-    .container {
-        padding: 0 40px;
-    }
-    .site-logo {
-        font-size: 1.5rem;
-        flex-grow: 1;
-        text-align: center;
-    }
-
     #drop-down-cbox + label {
         display: inline-block;
         text-align: right; /* unhide the mobile nav button */
@@ -390,11 +437,11 @@ h2 {
     .main-nav {
         max-height: 0px; /* same vertical grow transition trick as above */
         height: calc(
-            100vh - 60px
+            100vh - 105px
         ); /* take full vertical viewport height, -60px for nav-bar */
         overflow: hidden;
         position: absolute;
-        top: 110px;
+        top: 63px;
         line-height: auto;
         left: 0;
 
@@ -448,7 +495,11 @@ h2 {
         background-color: #eee;
     }
 }
-
+@media (max-width: 600px) {
+    .site-logo img {
+        max-width: 85px;
+    }
+}
 /* manu end  */
 .banner {
     background: #87509c;
@@ -509,6 +560,14 @@ h2 {
 .service-card p {
     margin: 0 auto;
     color: #fff;
+}
+@media (max-width: 768px) {
+    .service {
+        padding: 80px 0px;
+    }
+    .service-card {
+        margin: 5px;
+    }
 }
 /* feature section style start  */
 .feature {
@@ -589,6 +648,11 @@ h2 {
 .fa.fa-envelope-o:hover {
     color: #0ae8ca;
     background-color: #f9f9f9;
+}
+@media (max-width: 768px) {
+    .feature {
+        padding: 80px 0px;
+    }
 }
 /* skills styles start  */
 .skills {
@@ -725,7 +789,11 @@ div[role='progressbar4']::before {
     counter-reset: percentage var(--value);
     content: counter(percentage) '%';
 }
-
+@media (max-width: 768px) {
+    .skills {
+        padding: 80px 0px;
+    }
+}
 /* Portfolio section style start  */
 
 .portfolio {
@@ -768,7 +836,18 @@ div[role='progressbar4']::before {
 .gallery-btn {
     margin: 75px auto 0 auto;
 }
-
+@media (max-width: 768px) {
+    .portfolio {
+        padding: 80px 0px;
+    }
+    .tab {
+        padding: 8px 10px;
+        margin-left: 5px;
+    }
+    .gallery-card h3 {
+        font-size: 14px;
+    }
+}
 /*--Review---*/
 
 .review {
@@ -802,8 +881,26 @@ div[role='progressbar4']::before {
     margin-top: 45px;
     margin-left: 25px;
 }
+@media (max-width: 768px) {
+    .review {
+        padding: 80px 0px;
+    }
+    .review-card {
+        text-align: center;
+        margin-bottom: 40px;
+        display: block;
+    }
 
+    .review-card img {
+        padding: 0 60px;
+    }
+    .review-card p {
+        margin-top: 0;
+        margin-left: 0;
+    }
+}
 /*section contsct---*/
+
 .contacts .cuda-details p {
     color: #fff;
 }
@@ -814,29 +911,32 @@ div[role='progressbar4']::before {
     border-color: #fff;
 }
 .contact-wrapper {
+    justify-content: center;
     align-items: baseline;
 }
 .contacts {
     background: #283f9e;
     padding: 150px 0px;
 }
-
-form {
-    padding-right: 40px;
-}
-
-input {
+.form-group {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+input {
+    max-width: 100%;
+    width: 49%;
     padding: 15px;
     border: 1px solid #283f9e;
     background-color: #283593;
-    margin: 0 auto 20px auto;
+    margin-bottom: 20px;
 }
 input::placeholder {
     color: #b8b8b8;
 }
 
 textarea {
+    max-width: 100%;
     width: 100%;
     border: 1px solid #283f9e;
     background-color: #283593;
@@ -962,13 +1062,23 @@ textarea::placeholder {
     letter-spacing: 1px;
     text-align: center;
 }
-
+@media (max-width: 768px) {
+    .contacts {
+        padding: 80px 0px;
+    }
+    form {
+        padding-right: 0px;
+    }
+    input {
+        margin: 10px 0;
+    }
+}
 hr {
     border-color: rgba(255, 255, 255, 0.6);
 }
 
 /* Begin Media Queries*/
-@media screen and (max-width: 850px) {
+/* @media screen and (max-width: 850px) {
     .contact-wrapper {
         display: flex;
         flex-direction: column;
@@ -992,29 +1102,9 @@ hr {
         height: 60px;
         line-height: 60px;
     }
-}
+} */
 
-@media screen and (max-width: 569px) {
-    .direct-contact-container,
-    .form-wrapper {
-        float: none;
-        margin: 0 auto;
-    }
-    .form-control,
-    textarea {
-        margin: 0 auto;
-    }
-
-    .name,
-    .email,
-    textarea {
-        width: 280px;
-    }
-
-    .direct-contact-container {
-        margin-top: 60px;
-        max-width: 280px;
-    }
+/* @media screen and (max-width: 569px) {
     .social-media-list {
         left: 0;
     }
@@ -1029,13 +1119,8 @@ hr {
         height: 55px;
         line-height: 55px;
     }
-}
+} */
 
-@media screen and (max-width: 410px) {
-    .send-button {
-        width: 99%;
-    }
-}
 /*FOOTER----*/
 
 .footer {
