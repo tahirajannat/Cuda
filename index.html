@@ -739,5 +739,50 @@
                 <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
             </div>
         </section>
+
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+        ></script>
+        <script type="text/javascript">
+            (function () {
+                // https://dashboard.emailjs.com/admin/account
+                emailjs.init('ZkSBmmroQ8Z1Cl53v');
+            })();
+        </script>
+        <script type="text/javascript">
+            // var templateParams = {
+            //     name: 'James',
+            //     notes: 'Check this out!',
+            // };
+
+            window.onload = function () {
+                document
+                    .getElementById('contact-form')
+                    .addEventListener('submit', function (event) {
+                        event.preventDefault();
+                        // generate a five digit number for the contact_number variable
+                        // contact_number = 12345;
+                        // this.contact_number.value =
+                        //     (Math.random() * 100000) | 0;
+                        // these IDs from the previous steps
+                        emailjs
+                            .sendForm(
+                                'service_cltf8il',
+                                'template_n5tqfkg',
+                                this
+                            )
+                            .then(
+                                function () {
+                                    alert('Successfully sent!');
+                                    console.log('SUCCESS!');
+                                },
+                                function (error) {
+                                    console.log('FAILED...', error);
+                                }
+                            );
+                    });
+            };
+        </script>
     </body>
 </html>
